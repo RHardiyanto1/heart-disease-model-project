@@ -2,6 +2,10 @@
 
 This project aims to predict the presence of heart disease using medical data collected during routine hospital visits. By analyzing factors such as age, blood pressure, cholesterol, and other health indicators, the model helps identify individuals who are at risk, enabling early intervention and potentially better treatment outcomes.
 
+## Full Analysis
+
+The full report can be found in the .md file or viewed through my [website](https://rhardiyanto1.github.io/posts/Heart-Disease-Project-Report/).
+
 ## Project Objective
 
 To develop a predictive model that estimates the likelihood of heart disease in patients based on medical data, and to highlight the most significant factors contributing to the diagnosis.
