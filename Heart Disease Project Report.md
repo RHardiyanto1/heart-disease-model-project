@@ -17,7 +17,7 @@ We attempted to optimize the model by removing features with the highest p-value
    
 2. Elastic Net Regularization: Combining L1 and L2 regularization, Elastic Net tuning bumped the accuracy further to 91.67%. Which ends up being our finalized model.
 
-![[Model Final.png]]
+![Model Final.png](https://github.com/RHardiyanto1/heart-disease-model-project/blob/main/images/Model%20Final.png)
 ### Key Results
 
 - **Final Accuracy:** 91.67%, with a strong balance of precision and recall, indicating reliable performance in heart disease prediction.
@@ -38,7 +38,7 @@ Using the [Cleveland Heart Disease dataset](https://www.archive.ics.uci.edu/data
 
 ### How the diagnosis is distributed, and why we simplified it
 
-![[HD Class Dist.png]]
+![HD Class Dist.png](https://github.com/RHardiyanto1/heart-disease-model-project/blob/main/images/HD%20Class%20Dist.png?raw=true)
 
 In the original dataset, the target variable `num` ranged from 0 to 4, where 0 represented no heart disease, and values 1 to 4 indicated increasing levels of severity. We simplified this to a binary classification, where `heart_disease = 1` if `num` was 1-4 (indicating any level of heart disease) and `heart_disease = 0` if `num` was 0 (indicating no heart disease). This decision was based on several important factors:
 
@@ -47,7 +47,7 @@ In the original dataset, the target variable `num` ranged from 0 to 4, where 0 r
 2. **Class Imbalance in the Original Data:** The original `num` was highly imbalanced, with most cases falling under 0 (no heart disease) and 1-4 being underrepresented, which posed a challenge for training a reliable model. By combining all the non-zero values into a single category, the distribution of the target variable becomes much more balanced.
 ### Exploring other factors, and how they relate to heart disease
 
-![[Feature Distribution 1.png]]
+![Feature Distribution 1.png](https://github.com/RHardiyanto1/heart-disease-model-project/blob/main/images/Feature%20Distribution%201.png?raw=true)
 
 **Observations**
 
@@ -81,7 +81,7 @@ In the original dataset, the target variable `num` ranged from 0 to 4, where 0 r
 	  
 	- **Spread and Outliers:** There is a clear upward shift in `oldpeak` values for the heart disease group, which could be a significant predictor.
 
-![[Feature Distribution 2.png]]
+![Feature Distribution 2.png](https://github.com/RHardiyanto1/heart-disease-model-project/blob/main/images/Feature%20Distribution%202.png?raw=true)
 
 1. **Sex vs. Heart Disease**
    
@@ -159,7 +159,7 @@ When starting the modeling process, we decided to include all available features
 
 ### Initial Model
 
-![[Model 1.png]]
+![[Model 1.png]](https://github.com/RHardiyanto1/heart-disease-model-project/blob/main/images/Model%201.png?raw=true)
 
 The first iteration of the logistic regression model was designed to establish a baseline performance for predicting heart disease. Here’s a step-by-step outline of the approach:
 
@@ -202,7 +202,7 @@ The first logistic regression model achieved a promising accuracy of 88.9%, with
 
 ### Applying Regularization: Testing L1 and L2 Separately
 
-![[Model 2.png]]
+![[Model 2.png]](https://github.com/RHardiyanto1/heart-disease-model-project/blob/main/images/Model%202.png?raw=true)
 
 To improve the logistic regression model and prevent overfitting, we introduced regularization techniques—specifically L1 (Lasso) and L2 (Ridge) regularization. These methods penalize large coefficients, which can help stabilize the model, especially when dealing with correlated features or noise. Here’s an outline of our approach and the results:
 #### Data Preparation
@@ -241,7 +241,7 @@ We then applied Lasso regularization (L1), which penalizes the absolute values o
 
 ### Final Model: Elastic Net Regularization
 
-![[Model Final.png]]
+![[Model Final.png]](https://github.com/RHardiyanto1/heart-disease-model-project/blob/main/images/Model%20Final.png?raw=true)
 
 For the final iteration, we utilized Elastic Net regularization, combining L1 (Lasso) and L2 (Ridge) penalties to optimize the model's ability to select features and shrink coefficients effectively. This approach aimed to balance feature selection with coefficient stability, improving the model's performance.
 #### Data Preparation
